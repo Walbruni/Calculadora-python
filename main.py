@@ -1,6 +1,6 @@
 # importando tkinter
 from tkinter import *
-from tkinter import ttk
+from tkinter import Tk, ttk
 
 # colors
 cor1 = "#3b3b3b"
@@ -14,6 +14,7 @@ janela = Tk()
 janela.title("Calculadora")
 janela.geometry("235x310")  # largura e comprimento
 janela.config(bg=cor1)
+janela.resizable(width=FALSE, height=FALSE)
 
 # frames
 frame_display = Frame(janela, width=235, height=50, bg=cor3)
